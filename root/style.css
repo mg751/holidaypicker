@@ -373,3 +373,12 @@ body {
     text-transform: lowercase;
     text-shadow: -3px 2px 3px goldenrod;
 }
+
+#maintitle {
+  border: 20px dashed goldenrod;
+  background-image: url(/images/alex-bertha-Jyg7xHRmXiU-unsplash.jpg);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  background-origin: content-box;
+}
