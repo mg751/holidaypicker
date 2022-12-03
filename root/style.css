@@ -353,32 +353,119 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+:root {
+  --main-bg-color: rgb(208, 233, 242);
+  --main-bg-color-dark: rgb(115,162,191);
+  --secondary-color-yellow: rgb(242, 151, 39);
+  --secondary-color-orange: rgb(242,98,46);
+  --seconary-color-brown: rgb(140,60,42);
+  --main-text-color: black;
+
+}
+
 body {
-    font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-#main-menu ul {
+
+#menu ul {
     list-style: none;
-}
-
-#maintitle {
     display: flex;
-    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 
-#maintitle h1 {
-    font-size: 2.6rem;
-    font-weight: bolder;
-    letter-spacing: 0.1rem;
-    text-transform: lowercase;
-    text-shadow: -3px 2px 3px goldenrod;
+#menu ul li {
+  font-size: 0.9rem;
 }
 
-#maintitle {
-  border: 20px dashed goldenrod;
-  background-image: url(/images/alex-bertha-Jyg7xHRmXiU-unsplash.jpg);
-  background-position: center;
-  height: 50vh;
+#mainui {
+  width: 96vw;
+  min-height: calc(100vh - 4vw);
+  border: 2vw solid var(--secondary-color-yellow);
+  background: linear-gradient(var(--main-bg-color-dark), 20%, var(--main-bg-color));
   background-size: cover;
   background-origin: content-box;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+#h1card {
+  width: min(90vw, 400px);
+}
+
+#mainui h1 {
+  font-size: clamp(2rem, 2.5rem, 90%);
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
+  text-shadow: 0px 0px 3px var(--secondary-color-yellow);
+  padding: 2.6rem 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+
+form {
+  padding: 20px 0px;
+  width: min(80vw, 600px);
+  border: 1px solid rosybrown;
+  gap: 20px;
+}
+
+form,
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > div > input,
+form > div > select {
+  padding: 0;
+  margin: 0;
+}
+
+.selection > select {
+  width: 207px;
+}
+
+#menu {
+  align-self: flex-end;
+}
+
+.countryform {
+  display: none;
+}
+
+.stepone > div {
+  margin-bottom: 12px;
+}
+
+.continentform {
+  width: 100%;
+}
+
+.stepone {
+  width: min(80%, 300px);
+}
+
+.hidden {
+  display: none;
+}
+

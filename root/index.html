@@ -9,24 +9,174 @@
 </head>
 <body>
     <header>
-        <nav id="main-menu">
-            <ul>
-                <li>Start</li>
-                <li>About</li>
-            </ul>
-        </nav>
     </header>
-
     <main>
-        <div id="maintitle">
-            <h1>Holiday picker</h1>
+        <div id="mainui">
+            <nav id="menu">
+                <ul>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div id="h1card">
+                <h1>Holiday picker</h1>
+            </div>
+            <form id="continentform">
+                <div class="playername">
+                    <label for="playername">Player Name</label>
+                    <input type="text" name="playername" id="playername">
+                </div>
+                <fieldset class="stepone">
+                    <legend>Choose your continent</legend>
+                    <div><input type="radio" name="asia"><label for="asia">Asia</label></div>
+                    <div><input type="radio" name="africa"><label for="africa">Africa</label></div>
+                    <div><input type="radio" name="northamerica"><label for="northamerica">North America</label></div>
+                    <div><input type="radio" name="southamerica"><label for="southamerica">South America</label></div>
+                    <div><input type="radio" name="europe"><label for="europe">Europe</label></div>
+                    <div><input type="radio" name="australia"><label for="australia">Australia/Ociania</label></div>
+                    <div><input type="radio" name="antarctica"><label for="antarctica">Antarctica</label></div>
+                    <button type="button" id="steponebtn">Select</button>
+                </fieldset>
+            </form>
+
+            <form action="" class="countryform">
+                <div class="selection">
+                    <label for="countryafrica">Country - Africa</label>
+                    <select name="countryafrica" id="countryafrica">
+                        <option value="africa1">Algeria</option>
+                        <option value="africa2">Angola</option>
+                        <option value="africa3">Benin</option>
+                        <option value="africa4">Botswana</option>
+                        <option value="africa5">Burkina Faso</option>
+                        <option value="africa6">Burundi</option>
+                        <option value="africa7">Cabo Verde/Cape Verde</option>
+                        <option value="africa8">Cameroon</option>
+                        <option value="africa9">Central African Republic</option>
+                        <option value="africa10">Chad</option>
+                        <option value="africa11">Comoros</option>
+                        <option value="africa12">Congo/Republic of the Congo</option>
+                        <option value="africa13">Democratic Republic of the Congo</option>
+                        <option value="africa14">Djibouti</option>
+                        <option value="africa15">Egypt</option>
+                        <option value="africa16">Equatorial Guinea</option>
+                        <option value="africa17">Eritrea</option>
+                        <option value="africa18">Eswatini</option>
+                        <option value="africa19">Ethiopia</option>
+                        <option value="africa20">Gabon</option>
+                        <option value="africa21">Gambia, The</option>
+                        <option value="africa22">Ghana</option>
+                        <option value="africa23">Guinea</option>
+                        <option value="africa24">Guinea-Bissau</option>
+                        <option value="africa25">Ivory Coast/Republic of Côte d'Ivoire</option>
+                        <option value="africa26">Kenya</option>
+                        <option value="africa27">Lesotho</option>
+                        <option value="africa28">Liberia</option>
+                        <option value="africa29">Libya</option>
+                        <option value="africa30">Madagascar</option>
+                        <option value="africa31">Malawi</option>
+                        <option value="africa32">Mali</option>
+                        <option value="africa33">Mauritania</option>
+                        <option value="africa34">Mauritius</option>
+                        <option value="africa35">Morocco</option>
+                        <option value="africa36">Mozambique</option>
+                        <option value="africa37">Namibia</option>
+                        <option value="africa38">Niger</option>
+                        <option value="africa39">Nigeria</option>
+                        <option value="africa40">Rwanda</option>
+                        <option value="africa41">Sao Tome and Principe</option>
+                        <option value="africa42">Senegal</option>
+                        <option value="africa43">Seychelles</option>
+                        <option value="africa44">Sierra Leone</option>
+                        <option value="africa45">Somalia</option>
+                        <option value="africa46">South Africa</option>
+                        <option value="africa47">South Sudan</option>
+                        <option value="africa48">Sudan</option>
+                        <option value="africa49">Tanzania</option>
+                        <option value="africa50">Togo</option>
+                        <option value="africa51">Tunisia</option>
+                        <option value="africa52">Uganda</option>
+                        <option value="africa53">Zambia</option>
+                        <option value="africa54">Zimbabwe</option>
+                        <option value="africa55">Canary Islands (Spain)</option>
+                        <option value="africa56">Ceuta (Spain)</option>
+                        <option value="africa57">French Southern and Antarctic Lands (France)</option>
+                        <option value="africa58">Madeira (Portugal)</option>
+                        <option value="africa59">Mayotte (France)</option>
+                        <option value="africa60">Melilla (Spain)</option>
+                        <option value="africa61">Pelagie Islands (Italy)</option>
+                        <option value="africa62">Plazas de Soberania (Spain)</option>
+                        <option value="africa63">Reunion (France)</option>
+                        <option value="africa64">Saint Helena, Ascension and Tristan da Cunha (UK)</option>
+                        <option value="africa65">Socotra Archipelago (Yemen)</option>
+                    </select>
+                </div>
+                <div class="selection">
+                    <label for="countryasia">Country - Asia</label>
+                    <select name="countryasia" id="countryasia">
+                        <option value="asia1">Afghanistan</option>
+                        <option value="asia2">Armenia</option>
+                        <option value="asia3">Azerbaijan</option>
+                        <option value="asia4">Bahrain</option>
+                        <option value="asia5">Bangladesh</option>
+                        <option value="asia6">Bhutan</option>
+                        <option value="asia7">British Indian Ocean Territory</option>
+                        <option value="asia8">Brunei</option>
+                        <option value="asia9">Cambodia</option>
+                        <option value="asia10">China</option>
+                        <option value="asia11">Cyprus</option>
+                        <option value="asia12">Egypt</option>
+                        <option value="asia13">Georgia</option>
+                        <option value="asia14">Hong Kong</option>
+                        <option value="asia15">India</option>
+                        <option value="asia16">Indonesia</option>
+                        <option value="asia17">Iran</option>
+                        <option value="asia18">Iraq</option>
+                        <option value="asia19">Israel</option>
+                        <option value="asia20">Japan</option>
+                        <option value="asia21">Jordan</option>
+                        <option value="asia22">Kazakhstan</option>
+                        <option value="asia23">Kuwait</option>
+                        <option value="asia24">Kyrgyzstan</option>
+                        <option value="asia25">Laos</option>
+                        <option value="asia26">Lebanon</option>
+                        <option value="asia27">Macau</option>
+                        <option value="asia28">Malaysia</option>
+                        <option value="asia29">Maldives</option>
+                        <option value="asia30">Mongolia</option>
+                        <option value="asia31">Myanmar</option>
+                        <option value="asia32">Nepal</option>
+                        <option value="asia33">North Korea</option>
+                        <option value="asia34">Oman</option>
+                        <option value="asia35">Pakistan</option>
+                        <option value="asia36">Palestine</option>
+                        <option value="asia37">Philippines</option>
+                        <option value="asia38">Qatar</option>
+                        <option value="asia39">Russia</option>
+                        <option value="asia40">Saudi Arabia</option>
+                        <option value="asia41">Singapore</option>
+                        <option value="asia42">South Korea</option>
+                        <option value="asia43">Sri Lanka</option>
+                        <option value="asia44">Syria</option>
+                        <option value="asia45">Taiwan</option>
+                        <option value="asia46">Tajikistan</option>
+                        <option value="asia47">Thailand</option>
+                        <option value="asia48">Timor-Leste/East Timor</option>
+                        <option value="asia49">Turkey</option>
+                        <option value="asia50">Turkmenistan</option>
+                        <option value="asia51">United Arab Emirates</option>
+                        <option value="asia52">Uzbekistan</option>
+                        <option value="asia53">Vietnam</option>
+                        <option value="asia54">Yemen</option>
+                    </select>
+                    </div>
+
+            </form>
         </div>
         
+        
     </main>
-
     <footer>
-
     </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
