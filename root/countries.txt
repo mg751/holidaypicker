@@ -2,7 +2,8 @@ Description:
 Need database.
 
 
-
+Issues:
+Is it possible to submit info and join lobby without refresh (try chat room tuts)
 
 
 Psuedocode ***FIRST SINGLE PLAYER VERSION with 3 people***
@@ -20,6 +21,12 @@ Psuedocode ***FIRST SINGLE PLAYER VERSION with 3 people***
 10. Calulate top 5 popular countries, display them, announce final vote off
 11. Each player ranks 3/5 countries in order of preference
 
+New Psuedocode:
+1. Enter player name and lobby code
+2. "Lobby" area with players who join, change status to ready, countdown starts
+3. Each screen must choose continent and submit, wait for other players to also do same
+4. Continent calculation made, top continent displayed, country list now added
+5. ...
 
 
 

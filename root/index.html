@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Holiday Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,10 +22,14 @@
                 <h1>Holiday picker</h1>
             </div>
             <form id="lobbyform">
-                <label for="playername">Player Name</label>
-                <input type="text" name="playername" id="playername">
-                <label for="lobbycode">Lobby Code</label>
-                <input type="number" name="lobbycode" id="lobbycode">
+                <div>
+                    <label for="playername">Player Name</label>
+                    <input type="text" name="user_name" id="playername">
+                </div>
+                <div>
+                    <label for="lobbycode">Lobby Code</label>
+                    <input type="number" name="user_lobby" id="lobbycode">
+                </div>
                 <button type="button" id="lobbyformbtn" disabled>Submit</button>
             </form>
 
@@ -39,7 +44,7 @@
                     <div><input type="radio" name="continent" id="northamerica"><label for="northamerica">North America</label></div>
                     <div><input type="radio" name="continent" id="southamerica"><label for="southamerica">South America</label></div>
                 </fieldset>
-                <button type="button" id="continentformbtn" value="Submit" disabled>Submit</button>
+                <button type="button" id="continentformbtn" disabled>Submit</button>
             </form>
 
 
@@ -112,65 +117,63 @@
                     <option value="africa64">Saint Helena, Ascension and Tristan da Cunha (UK)</option>
                     <option value="africa65">Socotra Archipelago (Yemen)</option>
                 </select>
-                <div class="selection">
-                    <label for="countryasia">Country - Asia</label>
-                    <select name="countryasia" id="countryasia">
-                        <option value="asia1">Afghanistan</option>
-                        <option value="asia2">Armenia</option>
-                        <option value="asia3">Azerbaijan</option>
-                        <option value="asia4">Bahrain</option>
-                        <option value="asia5">Bangladesh</option>
-                        <option value="asia6">Bhutan</option>
-                        <option value="asia7">British Indian Ocean Territory</option>
-                        <option value="asia8">Brunei</option>
-                        <option value="asia9">Cambodia</option>
-                        <option value="asia10">China</option>
-                        <option value="asia11">Cyprus</option>
-                        <option value="asia12">Egypt</option>
-                        <option value="asia13">Georgia</option>
-                        <option value="asia14">Hong Kong</option>
-                        <option value="asia15">India</option>
-                        <option value="asia16">Indonesia</option>
-                        <option value="asia17">Iran</option>
-                        <option value="asia18">Iraq</option>
-                        <option value="asia19">Israel</option>
-                        <option value="asia20">Japan</option>
-                        <option value="asia21">Jordan</option>
-                        <option value="asia22">Kazakhstan</option>
-                        <option value="asia23">Kuwait</option>
-                        <option value="asia24">Kyrgyzstan</option>
-                        <option value="asia25">Laos</option>
-                        <option value="asia26">Lebanon</option>
-                        <option value="asia27">Macau</option>
-                        <option value="asia28">Malaysia</option>
-                        <option value="asia29">Maldives</option>
-                        <option value="asia30">Mongolia</option>
-                        <option value="asia31">Myanmar</option>
-                        <option value="asia32">Nepal</option>
-                        <option value="asia33">North Korea</option>
-                        <option value="asia34">Oman</option>
-                        <option value="asia35">Pakistan</option>
-                        <option value="asia36">Palestine</option>
-                        <option value="asia37">Philippines</option>
-                        <option value="asia38">Qatar</option>
-                        <option value="asia39">Russia</option>
-                        <option value="asia40">Saudi Arabia</option>
-                        <option value="asia41">Singapore</option>
-                        <option value="asia42">South Korea</option>
-                        <option value="asia43">Sri Lanka</option>
-                        <option value="asia44">Syria</option>
-                        <option value="asia45">Taiwan</option>
-                        <option value="asia46">Tajikistan</option>
-                        <option value="asia47">Thailand</option>
-                        <option value="asia48">Timor-Leste/East Timor</option>
-                        <option value="asia49">Turkey</option>
-                        <option value="asia50">Turkmenistan</option>
-                        <option value="asia51">United Arab Emirates</option>
-                        <option value="asia52">Uzbekistan</option>
-                        <option value="asia53">Vietnam</option>
-                        <option value="asia54">Yemen</option>
-                    </select>
-                    </div>
+                <label for="countryasia">Country - Asia</label>
+                <select name="countryasia" id="countryasia">
+                    <option value="asia1">Afghanistan</option>
+                    <option value="asia2">Armenia</option>
+                    <option value="asia3">Azerbaijan</option>
+                    <option value="asia4">Bahrain</option>
+                    <option value="asia5">Bangladesh</option>
+                    <option value="asia6">Bhutan</option>
+                    <option value="asia7">British Indian Ocean Territory</option>
+                    <option value="asia8">Brunei</option>
+                    <option value="asia9">Cambodia</option>
+                    <option value="asia10">China</option>
+                    <option value="asia11">Cyprus</option>
+                    <option value="asia12">Egypt</option>
+                    <option value="asia13">Georgia</option>
+                    <option value="asia14">Hong Kong</option>
+                    <option value="asia15">India</option>
+                    <option value="asia16">Indonesia</option>
+                    <option value="asia17">Iran</option>
+                    <option value="asia18">Iraq</option>
+                    <option value="asia19">Israel</option>
+                    <option value="asia20">Japan</option>
+                    <option value="asia21">Jordan</option>
+                    <option value="asia22">Kazakhstan</option>
+                    <option value="asia23">Kuwait</option>
+                    <option value="asia24">Kyrgyzstan</option>
+                    <option value="asia25">Laos</option>
+                    <option value="asia26">Lebanon</option>
+                    <option value="asia27">Macau</option>
+                    <option value="asia28">Malaysia</option>
+                    <option value="asia29">Maldives</option>
+                    <option value="asia30">Mongolia</option>
+                    <option value="asia31">Myanmar</option>
+                    <option value="asia32">Nepal</option>
+                    <option value="asia33">North Korea</option>
+                    <option value="asia34">Oman</option>
+                    <option value="asia35">Pakistan</option>
+                    <option value="asia36">Palestine</option>
+                    <option value="asia37">Philippines</option>
+                    <option value="asia38">Qatar</option>
+                    <option value="asia39">Russia</option>
+                    <option value="asia40">Saudi Arabia</option>
+                    <option value="asia41">Singapore</option>
+                    <option value="asia42">South Korea</option>
+                    <option value="asia43">Sri Lanka</option>
+                    <option value="asia44">Syria</option>
+                    <option value="asia45">Taiwan</option>
+                    <option value="asia46">Tajikistan</option>
+                    <option value="asia47">Thailand</option>
+                    <option value="asia48">Timor-Leste/East Timor</option>
+                    <option value="asia49">Turkey</option>
+                    <option value="asia50">Turkmenistan</option>
+                    <option value="asia51">United Arab Emirates</option>
+                    <option value="asia52">Uzbekistan</option>
+                    <option value="asia53">Vietnam</option>
+                    <option value="asia54">Yemen</option>
+                </select>
 
             </form>
         </div>
