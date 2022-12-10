@@ -20,95 +20,98 @@
             <div id="h1card">
                 <h1>Holiday picker</h1>
             </div>
-            <form id="continentform">
-                <div class="playername">
-                    <label for="playername">Player Name</label>
-                    <input type="text" name="playername" id="playername">
-                </div>
-                <fieldset class="stepone">
-                    <legend>Choose your continent</legend>
-                    <div><input type="radio" name="asia"><label for="asia">Asia</label></div>
-                    <div><input type="radio" name="africa"><label for="africa">Africa</label></div>
-                    <div><input type="radio" name="northamerica"><label for="northamerica">North America</label></div>
-                    <div><input type="radio" name="southamerica"><label for="southamerica">South America</label></div>
-                    <div><input type="radio" name="europe"><label for="europe">Europe</label></div>
-                    <div><input type="radio" name="australia"><label for="australia">Australia/Ociania</label></div>
-                    <div><input type="radio" name="antarctica"><label for="antarctica">Antarctica</label></div>
-                    <button type="button" id="steponebtn">Select</button>
-                </fieldset>
+            <form id="lobbyform">
+                <label for="playername">Player Name</label>
+                <input type="text" name="playername" id="playername">
+                <label for="lobbycode">Lobby Code</label>
+                <input type="number" name="lobbycode" id="lobbycode">
+                <button type="button" id="lobbyformbtn" disabled>Submit</button>
             </form>
 
-            <form action="" class="countryform">
-                <div class="selection">
-                    <label for="countryafrica">Country - Africa</label>
-                    <select name="countryafrica" id="countryafrica">
-                        <option value="africa1">Algeria</option>
-                        <option value="africa2">Angola</option>
-                        <option value="africa3">Benin</option>
-                        <option value="africa4">Botswana</option>
-                        <option value="africa5">Burkina Faso</option>
-                        <option value="africa6">Burundi</option>
-                        <option value="africa7">Cabo Verde/Cape Verde</option>
-                        <option value="africa8">Cameroon</option>
-                        <option value="africa9">Central African Republic</option>
-                        <option value="africa10">Chad</option>
-                        <option value="africa11">Comoros</option>
-                        <option value="africa12">Congo/Republic of the Congo</option>
-                        <option value="africa13">Democratic Republic of the Congo</option>
-                        <option value="africa14">Djibouti</option>
-                        <option value="africa15">Egypt</option>
-                        <option value="africa16">Equatorial Guinea</option>
-                        <option value="africa17">Eritrea</option>
-                        <option value="africa18">Eswatini</option>
-                        <option value="africa19">Ethiopia</option>
-                        <option value="africa20">Gabon</option>
-                        <option value="africa21">Gambia, The</option>
-                        <option value="africa22">Ghana</option>
-                        <option value="africa23">Guinea</option>
-                        <option value="africa24">Guinea-Bissau</option>
-                        <option value="africa25">Ivory Coast/Republic of Côte d'Ivoire</option>
-                        <option value="africa26">Kenya</option>
-                        <option value="africa27">Lesotho</option>
-                        <option value="africa28">Liberia</option>
-                        <option value="africa29">Libya</option>
-                        <option value="africa30">Madagascar</option>
-                        <option value="africa31">Malawi</option>
-                        <option value="africa32">Mali</option>
-                        <option value="africa33">Mauritania</option>
-                        <option value="africa34">Mauritius</option>
-                        <option value="africa35">Morocco</option>
-                        <option value="africa36">Mozambique</option>
-                        <option value="africa37">Namibia</option>
-                        <option value="africa38">Niger</option>
-                        <option value="africa39">Nigeria</option>
-                        <option value="africa40">Rwanda</option>
-                        <option value="africa41">Sao Tome and Principe</option>
-                        <option value="africa42">Senegal</option>
-                        <option value="africa43">Seychelles</option>
-                        <option value="africa44">Sierra Leone</option>
-                        <option value="africa45">Somalia</option>
-                        <option value="africa46">South Africa</option>
-                        <option value="africa47">South Sudan</option>
-                        <option value="africa48">Sudan</option>
-                        <option value="africa49">Tanzania</option>
-                        <option value="africa50">Togo</option>
-                        <option value="africa51">Tunisia</option>
-                        <option value="africa52">Uganda</option>
-                        <option value="africa53">Zambia</option>
-                        <option value="africa54">Zimbabwe</option>
-                        <option value="africa55">Canary Islands (Spain)</option>
-                        <option value="africa56">Ceuta (Spain)</option>
-                        <option value="africa57">French Southern and Antarctic Lands (France)</option>
-                        <option value="africa58">Madeira (Portugal)</option>
-                        <option value="africa59">Mayotte (France)</option>
-                        <option value="africa60">Melilla (Spain)</option>
-                        <option value="africa61">Pelagie Islands (Italy)</option>
-                        <option value="africa62">Plazas de Soberania (Spain)</option>
-                        <option value="africa63">Reunion (France)</option>
-                        <option value="africa64">Saint Helena, Ascension and Tristan da Cunha (UK)</option>
-                        <option value="africa65">Socotra Archipelago (Yemen)</option>
-                    </select>
-                </div>
+            <form id="continentform" class="hidden">
+                <fieldset class="stepone">
+                    <legend>Choose your continent</legend>
+                    <div><input type="radio" name="continent" id="asia"><label for="asia">Asia</label></div>
+                    <div><input type="radio" name="continent" id="europe"><label for="europe">Europe</label></div>
+                    <div><input type="radio" name="continent" id="australia"><label for="australia">Australia/Oceania</label></div>
+                    <div><input type="radio" name="continent" id="antarctica"><label for="antarctica">Antarctica</label></div>
+                    <div><input type="radio" name="continent" id="africa"><label for="africa">Africa</label></div>
+                    <div><input type="radio" name="continent" id="northamerica"><label for="northamerica">North America</label></div>
+                    <div><input type="radio" name="continent" id="southamerica"><label for="southamerica">South America</label></div>
+                </fieldset>
+                <button type="button" id="continentformbtn" value="Submit" disabled>Submit</button>
+            </form>
+
+
+            <form id="countryform" class="hidden">
+                <label for="countryafrica">Country - Africa</label>
+                <select name="countryafrica" id="countryafrica">
+                    <option value="africa1">Algeria</option>
+                    <option value="africa2">Angola</option>
+                    <option value="africa3">Benin</option>
+                    <option value="africa4">Botswana</option>
+                    <option value="africa5">Burkina Faso</option>
+                    <option value="africa6">Burundi</option>
+                    <option value="africa7">Cabo Verde/Cape Verde</option>
+                    <option value="africa8">Cameroon</option>
+                    <option value="africa9">Central African Republic</option>
+                    <option value="africa10">Chad</option>
+                    <option value="africa11">Comoros</option>
+                    <option value="africa12">Congo/Republic of the Congo</option>
+                    <option value="africa13">Democratic Republic of the Congo</option>
+                    <option value="africa14">Djibouti</option>
+                    <option value="africa15">Egypt</option>
+                    <option value="africa16">Equatorial Guinea</option>
+                    <option value="africa17">Eritrea</option>
+                    <option value="africa18">Eswatini</option>
+                    <option value="africa19">Ethiopia</option>
+                    <option value="africa20">Gabon</option>
+                    <option value="africa21">Gambia, The</option>
+                    <option value="africa22">Ghana</option>
+                    <option value="africa23">Guinea</option>
+                    <option value="africa24">Guinea-Bissau</option>
+                    <option value="africa25">Ivory Coast/Republic of Côte d'Ivoire</option>
+                    <option value="africa26">Kenya</option>
+                    <option value="africa27">Lesotho</option>
+                    <option value="africa28">Liberia</option>
+                    <option value="africa29">Libya</option>
+                    <option value="africa30">Madagascar</option>
+                    <option value="africa31">Malawi</option>
+                    <option value="africa32">Mali</option>
+                    <option value="africa33">Mauritania</option>
+                    <option value="africa34">Mauritius</option>
+                    <option value="africa35">Morocco</option>
+                    <option value="africa36">Mozambique</option>
+                    <option value="africa37">Namibia</option>
+                    <option value="africa38">Niger</option>
+                    <option value="africa39">Nigeria</option>
+                    <option value="africa40">Rwanda</option>
+                    <option value="africa41">Sao Tome and Principe</option>
+                    <option value="africa42">Senegal</option>
+                    <option value="africa43">Seychelles</option>
+                    <option value="africa44">Sierra Leone</option>
+                    <option value="africa45">Somalia</option>
+                    <option value="africa46">South Africa</option>
+                    <option value="africa47">South Sudan</option>
+                    <option value="africa48">Sudan</option>
+                    <option value="africa49">Tanzania</option>
+                    <option value="africa50">Togo</option>
+                    <option value="africa51">Tunisia</option>
+                    <option value="africa52">Uganda</option>
+                    <option value="africa53">Zambia</option>
+                    <option value="africa54">Zimbabwe</option>
+                    <option value="africa55">Canary Islands (Spain)</option>
+                    <option value="africa56">Ceuta (Spain)</option>
+                    <option value="africa57">French Southern and Antarctic Lands (France)</option>
+                    <option value="africa58">Madeira (Portugal)</option>
+                    <option value="africa59">Mayotte (France)</option>
+                    <option value="africa60">Melilla (Spain)</option>
+                    <option value="africa61">Pelagie Islands (Italy)</option>
+                    <option value="africa62">Plazas de Soberania (Spain)</option>
+                    <option value="africa63">Reunion (France)</option>
+                    <option value="africa64">Saint Helena, Ascension and Tristan da Cunha (UK)</option>
+                    <option value="africa65">Socotra Archipelago (Yemen)</option>
+                </select>
                 <div class="selection">
                     <label for="countryasia">Country - Asia</label>
                     <select name="countryasia" id="countryasia">

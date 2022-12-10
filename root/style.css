@@ -449,10 +449,6 @@ form > div > select {
   align-self: flex-end;
 }
 
-.countryform {
-  display: none;
-}
-
 .stepone > div {
   margin-bottom: 12px;
 }
@@ -469,3 +465,6 @@ form > div > select {
   display: none;
 }
 
+.visible {
+  display: initial;
+}
