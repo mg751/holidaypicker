@@ -1,0 +1,13 @@
+#draggableform ol {
+    list-style-type: none;
+}
+
+#draggableform p {
+    position: absolute;
+}
+
+#draggableform li {
+    border: 1px solid pink;
+    margin: 5px 0px;
+    width: 150px;
+}
