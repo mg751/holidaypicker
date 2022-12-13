@@ -1,5 +1,7 @@
 let playerName;
 let lobbyCode;
+let continentChoice;
+
 const lobbyForm = document.getElementById("lobbyform")
 const lobbyFormBtn = document.getElementById("lobbyformbtn")
 const continentForm = document.getElementById("continentform")
@@ -7,6 +9,7 @@ const continentFormBtn = document.getElementById("continentformbtn")
 const countryForm = document.getElementById("countryform")
 const lobbyCodeInput = document.getElementById("lobbycode");
 const playerNameInput = document.getElementById("playername");
+const continentRadioBtns = document.querySelectorAll("#continentform > fieldset div input");
 
 lobbyFormBtn.addEventListener('click', chooseLobby);
 continentFormBtn.addEventListener('click', chooseContinent);
@@ -19,6 +22,18 @@ lobbyForm.addEventListener('input', function() {
     }
 });
 
+
+for (let radioBtn of continentRadioBtns) {
+    radioBtn.addEventListener('input', function() {
+        continentFormBtn.removeAttribute('disabled');
+        continentChoice = radioBtn.value;
+    }
+)};
+
+continentFormBtn.addEventListener('click', function() {
+
+}   
+);
 
 function chooseLobby() {
     playerName = playerNameInput.value;
